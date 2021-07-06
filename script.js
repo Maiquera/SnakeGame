@@ -15,7 +15,7 @@ let comida = {
 }
 
 function criarBG() {
-    context.fillStyle = "green"
+    context.fillStyle = "green";
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
@@ -27,7 +27,7 @@ function criarCobra() {
 }
 
 function criarComida(){
-    context.fillStyle = "red";
+    context.fillStyle = "yellow";
     context.fillRect(comida.x, comida.y, box, box);
 }
 
@@ -38,7 +38,6 @@ function update(event){
     if(event.keyCode == 38 && direction != "down") direction="up";
     if(event.keyCode == 39 && direction != "left") direction="right";
     if(event.keyCode == 40 && direction != "up") direction="down";
-
 }
 
 function iniciarJogo(){
@@ -78,7 +77,6 @@ function iniciarJogo(){
         x: snakeX,
         y: snakeY
     }
-
     snake.unshift(newHead);
 }
 
